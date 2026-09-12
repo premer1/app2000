@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Low-fidelity prototype for Utopia Turistforening – finn turer, medlemskap og turvenner."
+    />
+    <title>Utopia Turistforening</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Utopia Turistforening – forsiden">
+        <span class="brand-mark" aria-hidden="true">UT</span>
+        <span>Utopia<br /><strong>Turistforening</strong></span>
+      </a>
+
+      <nav aria-label="Hovedmeny">
+        <a href="#finn-tur">Finn tur</a>
+        <a href="#turtyper">Turtyper</a>
+        <a href="#fellesskap">Fellesskap</a>
+        <a href="#medlem">Medlemskap</a>
+      </nav>
+
+      <a class="button button-small button-outline" href="#medlem">Bli medlem</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Ut på tur i Utopia</p>
+          <h1 id="hero-title">Finn turen som passer for deg</h1>
+          <p class="hero-text">
+            Oppdag nye steder, finn turvenner og bli en del av et inkluderende
+            turfellesskap.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#finn-tur">Finn en tur</a>
+            <a class="text-link" href="#fellesskap">Finn en turvenn <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="hero-placeholder" role="img" aria-label="Bildeplassholder for fjellandskap">
+          <span class="mountain mountain-back"></span>
+          <span class="sun"></span>
+          <span class="mountain mountain-front"></span>
+          <span class="image-label">Bilde: Natur i Utopia</span>
+        </div>
+      </section>
+
+      <section class="search-panel" id="finn-tur" aria-labelledby="search-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Planlegg neste eventyr</p>
+          <h2 id="search-title">Hvor vil du dra?</h2>
+        </div>
+        <form class="trip-search" action="#turforslag">
+          <label>
+            Område eller sted
+            <input type="search" name="sted" placeholder="Søk i Utopia" />
+          </label>
+          <label>
+            Fylke
+            <select name="fylke">
+              <option value="">Velg fylke</option>
+              <option>Nord-Utopia</option>
+              <option>Vest-Utopia</option>
+              <option>Sentral-Utopia</option>
+              <option>Sør-Utopia</option>
+            </select>
+          </label>
+          <label>
+            Turtype
+            <select name="turtype">
+              <option value="">Alle turtyper</option>
+              <option>Fottur</option>
+              <option>Sykkeltur</option>
+              <option>Skitur</option>
+              <option>Topptur</option>
+            </select>
+          </label>
+          <button class="button search-button" type="submit">Søk etter tur</button>
+        </form>
+      </section>
+
+      <section class="section" id="turtyper" aria-labelledby="types-title">
+        <div class="section-heading">
+          <p class="eyebrow">Velg aktivitet</p>
+          <h2 id="types-title">Hva slags tur har du lyst på?</h2>
+          <p>Finn inspirasjon etter årstid, form og ambisjonsnivå.</p>
+        </div>
+        <div class="activity-grid">
+          <a class="activity-card" href="#turforslag">
+            <span class="activity-icon" aria-hidden="true">🥾</span>
+            <span><strong>Fottur</strong><small>28 turforslag</small></span>
+            <span aria-hidden="true">→</span>
+          </a>
+          <a class="activity-card" href="#turforslag">
+            <span class="activity-icon" aria-hidden="true">🚲</span>
+            <span><strong>Sykkeltur</strong><small>14 turforslag</small></span>
+            <span aria-hidden="true">→</span>
+          </a>
+          <a class="activity-card" href="#turforslag">
+            <span class="activity-icon" aria-hidden="true">⛷</span>
+            <span><strong>Skitur</strong><small>19 turforslag</small></span>
+            <span aria-hidden="true">→</span>
+          </a>
+          <a class="activity-card" href="#turforslag">
+            <span class="activity-icon" aria-hidden="true">▲</span>
+            <span><strong>Topptur</strong><small>11 turforslag</small></span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section muted-section" id="turforslag" aria-labelledby="trips-title">
+        <div class="section-heading heading-row">
+          <div>
+            <p class="eyebrow">Populært akkurat nå</p>
+            <h2 id="trips-title">Turforslag i Utopia</h2>
+          </div>
+          <a class="text-link" href="#finn-tur">Se alle turer <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="trip-grid">
+          <article class="trip-card">
+            <div class="card-image"><span>Bildeflate</span><span class="tag">Fottur</span></div>
+            <div class="card-content">
+              <p class="meta">Nord-Utopia · 3,5 timer</p>
+              <h3>Rundtur ved Sølvvannet</h3>
+              <p>En rolig rundtur langs vannet med fine rasteplasser underveis.</p>
+              <div class="card-footer"><span>● Lett</span><a href="#">Se turen →</a></div>
+            </div>
+          </article>
+          <article class="trip-card">
+            <div class="card-image image-dark"><span>Bildeflate</span><span class="tag">Topptur</span></div>
+            <div class="card-content">
+              <p class="meta">Vest-Utopia · 5 timer</p>
+              <h3>Utsikten fra Drømmetoppen</h3>
+              <p>En luftig tur med panoramautsikt over hele Utopiadalen.</p>
+              <div class="card-footer"><span>● Middels</span><a href="#">Se turen →</a></div>
+            </div>
+          </article>
+          <article class="trip-card">
+            <div class="card-image image-light"><span>Bildeflate</span><span class="tag">Sykkeltur</span></div>
+            <div class="card-content">
+              <p class="meta">Sør-Utopia · 2 timer</p>
+              <h3>Gjennom Eventyrskogen</h3>
+              <p>Familievennlig sykkeltur på brede stier og rolige skogsveier.</p>
+              <div class="card-footer"><span>● Lett</span><a href="#">Se turen →</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="community section" id="fellesskap" aria-labelledby="community-title">
+        <div class="community-copy">
+          <p class="eyebrow">Sammen på tur</p>
+          <h2 id="community-title">Finn noen å dele turen med</h2>
+          <p>
+            Bli med i en gruppe, finn andre med samme turmål eller send en melding
+            direkte til en turvenn.
+          </p>
+          <ul class="check-list">
+            <li>Lokale grupper i hele Utopia</li>
+            <li>Åpent for alle erfaringsnivåer</li>
+            <li>Avtal turer på en enkel måte</li>
+          </ul>
+          <a class="button" href="#chat">Utforsk fellesskapet</a>
+        </div>
+
+        <div class="chat-window" id="chat" aria-label="Forhåndsvisning av gruppechat">
+          <div class="chat-header">
+            <span class="avatar group-avatar" aria-hidden="true">3</span>
+            <span><strong>Turvenner i Nord</strong><small>12 medlemmer · 4 pålogget</small></span>
+            <button type="button" aria-label="Flere valg">•••</button>
+          </div>
+          <div class="messages">
+            <div class="message-row">
+              <span class="avatar" aria-hidden="true">LI</span>
+              <div><small>Liv · 09:42</small><p>Noen som vil gå Sølvvannet på lørdag?</p></div>
+            </div>
+            <div class="message-row own-message">
+              <div><small>Deg · 09:45</small><p>Jeg blir gjerne med! 🥾</p></div>
+            </div>
+            <div class="message-row">
+              <span class="avatar" aria-hidden="true">AM</span>
+              <div><small>Amir · 09:47</small><p>Flott! Vi møtes ved parkeringen kl. 10.</p></div>
+            </div>
+          </div>
+          <form class="chat-input" action="#chat">
+            <label class="sr-only" for="message">Skriv en melding</label>
+            <input id="message" type="text" placeholder="Skriv en melding …" />
+            <button type="submit" aria-label="Send melding">→</button>
+          </form>
+          <p class="demo-note">Demo: Meldinger blir ikke sendt</p>
+        </div>
+      </section>
+
+      <section class="membership section" id="medlem" aria-labelledby="member-title">
+        <div class="section-heading">
+          <p class="eyebrow">Bli en del av fellesskapet</p>
+          <h2 id="member-title">Et medlemskap for alle</h2>
+          <p>Velg medlemskapet som passer deg. Prisene er eksempler i prototypen.</p>
+        </div>
+        <div class="membership-grid">
+          <article class="price-card"><h3>Barn</h3><p class="price">150 kr <small>/ år</small></p><p>For barn til og med 12 år.</p><a class="button button-outline" href="#innmelding">Velg barn</a></article>
+          <article class="price-card featured"><span class="popular">Mest valgt</span><h3>Voksen</h3><p class="price">590 kr <small>/ år</small></p><p>For deg mellom 26 og 66 år.</p><a class="button" href="#innmelding">Velg voksen</a></article>
+          <article class="price-card"><h3>Familie</h3><p class="price">990 kr <small>/ år</small></p><p>For inntil to voksne og barn.</p><a class="button button-outline" href="#innmelding">Velg familie</a></article>
+          <article class="price-card"><h3>Senior</h3><p class="price">420 kr <small>/ år</small></p><p>For deg som er 67 år eller eldre.</p><a class="button button-outline" href="#innmelding">Velg senior</a></article>
+        </div>
+        <form class="signup-demo" id="innmelding" action="#medlem">
+          <label>Navn<input type="text" placeholder="Fornavn og etternavn" /></label>
+          <label>E-post<input type="email" placeholder="navn@eksempel.no" /></label>
+          <label>Medlemskap<select><option>Velg type</option><option>Barn</option><option>Voksen</option><option>Familie</option><option>Senior</option></select></label>
+          <button class="button" type="submit">Start innmelding</button>
+          <p class="demo-note">Dette er et demo-skjema og lagrer ingen opplysninger.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true">UT</span><span>Utopia<br /><strong>Turistforening</strong></span></div>
+      <p>En low-fidelity-prototype laget for APP2000 · 2025/2026</p>
+      <a href="#top">Til toppen ↑</a>
+    </footer>
+  </body>
+</html>
