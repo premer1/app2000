@@ -1,0 +1,43 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  place-items: center;
+  color: #17231e;
+  background: #f7f5ee;
+}
+
+main {
+  width: min(42rem, calc(100% - 2rem));
+  padding: 2rem;
+  border: 2px dashed #8a958f;
+  border-radius: 0.75rem;
+  background: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin-block: 0.25rem;
+}
+
+.status {
+  color: #285747;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+a {
+  color: #285747;
+  font-weight: 700;
+}
