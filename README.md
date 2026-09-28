@@ -1,8 +1,8 @@
 # Utopia Turistforening – APP2000
 
 Gruppeprosjekt i APP2000 for studieåret 2025/2026. Repoet inneholder
-statiske low-fidelity-prototyper for en turapp. Løsningene skal lages med HTML
-og CSS, uten backend eller database.
+low-fidelity-prototyper for en turapp og eksempler fra arbeidskrav 1.
+Løsningene har ingen backend eller database.
 
 Nettsiden ligger på <https://premer1.github.io/app2000/>.
 
@@ -15,8 +15,21 @@ Prototype 1 ligger i rotmappen og demonstrerer:
 - medlemskap for barn, voksne, familier og seniorer
 - et visuelt chatvindu for turvenner og grupper
 - responsivt oppsett for mobil, nettbrett og PC
+- innmeldingsskjema med inndatavalidering i HTML og JavaScript
 
-Prototype 2 har en klargjort arbeidsmappe i `prototypes/prototype-2/`.
+Prototype 2 ligger i `prototypes/prototype-2/` og viser et standardoppsett med
+CSS Grid. `prototypes/prototype-oyvind/` er en landingsside laget med en annen
+KI-assistent, til sammenligning med prototype 1.
+
+## Arbeidskrav 1
+
+| Oppgave | Plassering |
+|---|---|
+| Leksjon 1, pkt. 5a: landingsside | `index.html` og `prototypes/prototype-oyvind/` |
+| Leksjon 1, pkt. 8: CSS Grid | `prototypes/prototype-2/` |
+| Leksjon 2, oppg. 1: oppdatere DOM-en | `eksempler/dom/` |
+| Leksjon 2, oppg. 4: inndatavalidering | `index.html` og `script.js` |
+| Leksjon 3, oppg. 5: hyttedata i TypeScript | `eksempler/hytter/` |
 
 ## Mappestruktur
 
@@ -24,12 +37,15 @@ Prototype 2 har en klargjort arbeidsmappe i `prototypes/prototype-2/`.
 app2000/
 ├── index.html                    # Prototype 1 og GitHub Pages-forside
 ├── styles.css                   # Stiler for prototype 1
+├── script.js                    # Validering av innmeldingsskjemaet
 ├── prototypes/
-│   └── prototype-2/
-│       ├── index.html           # HTML for prototype 2
-│       ├── styles.css           # Stiler for prototype 2
-│       └── assets/              # Bilder og andre lokale ressurser
+│   ├── prototype-2/
+│   │   ├── index.html           # HTML for prototype 2
+│   │   ├── styles.css           # Stiler for prototype 2
+│   │   └── assets/              # Bilder og andre lokale ressurser
+│   └── prototype-oyvind/        # Landingsside fra en annen KI-assistent
 ├── eksempler/
+│   ├── dom/                     # Legge til og fjerne avsnitt i DOM-en
 │   └── hytter/                  # JSON-hyttedata og visning i TypeScript
 └── README.md                    # Prosjektinformasjon
 ```
@@ -91,5 +107,6 @@ endringene før de flettes inn i `main`.
 
 ## Avgrensning
 
-Skjemaer og chat er kun visuelle demonstrasjoner. De lagrer eller sender ikke
-data, og prosjektet bruker ikke JavaScript, backend eller database.
+Skjemaer og chat er kun demonstrasjoner. De lagrer eller sender ikke data, og
+prosjektet bruker ikke backend eller database. JavaScript brukes bare til
+validering i nettleseren og i eksemplene.

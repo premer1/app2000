@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turistforeningen i Utopia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Turistforeningen i Utopia</h1>
+        <nav>
+            <ul>
+                <li><a href="#medlem">Bli medlem</a></li>
+                <li><a href="#sok">Finn turruter</a></li>
+                <li><a href="#typer">Typer turer</a></li>
+                <li><a href="#chat">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- MEDLEM -->
+        <section id="medlem" class="card">
+            <h2>Bli medlem</h2>
+            <p>Velg medlemskap:</p>
+            <div class="button-group">
+                <button>Barn</button>
+                <button>Voksen</button>
+                <button>Familie</button>
+                <button>Senior</button>
+            </div>
+        </section>
+
+        <!-- SØK TURRUTER -->
+        <section id="sok" class="card">
+            <h2>Finn turruter</h2>
+            <label for="område">Geografisk område:</label>
+            <input type="text" id="område" placeholder="Søk område...">
+
+            <label for="fylke">Fylke:</label>
+            <select id="fylke">
+                <option>Velg fylke</option>
+                <option>Nord-Utopia</option>
+                <option>Sør-Utopia</option>
+                <option>Øst-Utopia</option>
+                <option>Vest-Utopia</option>
+            </select>
+
+            <button class="primary">Søk</button>
+        </section>
+
+        <!-- TURTYPER -->
+        <section id="typer" class="card">
+            <h2>Typer turer</h2>
+            <div class="button-group">
+                <button>Fottur</button>
+                <button>Sykkeltur</button>
+                <button>Skitur</button>
+                <button>Topptur</button>
+            </div>
+        </section>
+
+        <!-- CHAT -->
+        <section id="chat" class="card">
+            <h2>Sosialt chatvindu</h2>
+            <p>Kom i kontakt med turvenner:</p>
+
+            <div class="button-group">
+                <button>Send melding til bruker</button>
+                <button>Send melding til gruppe</button>
+            </div>
+
+            <textarea placeholder="Skriv en melding..."></textarea>
+            <button class="primary">Send</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Turistforeningen i Utopia</p>
+    </footer>
+</body>
+</html>
+
