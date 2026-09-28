@@ -1,0 +1,58 @@
+{
+  "versjon": 1,
+  "hytter": [
+    {
+      "id": "hytte-gjendesheim",
+      "navn": "Gjendesheim",
+      "betjening": "betjent",
+      "beskrivelse": "Innfallsport til Jotunheimen og startpunkt for Besseggen.",
+      "lokasjon": {
+        "koordinater": { "lat": 61.4936, "lon": 8.8117 },
+        "hoydeMoh": 995,
+        "kommune": "Vågå",
+        "fylke": "Innlandet"
+      },
+      "kapasitet": { "senger": 160, "rom": 50 },
+      "priser": {
+        "valuta": "NOK",
+        "overnatting": [
+          { "kategori": "Dobbeltrom", "medlem": 690, "ikkeMedlem": 940 },
+          { "kategori": "Sovesal", "medlem": 345, "ikkeMedlem": 495 }
+        ]
+      },
+      "fasiliteter": ["dusj", "strøm", "wifi", "tørkerom", "servering"],
+      "apningsperioder": [
+        { "fra": "2026-02-20", "til": "2026-05-03" },
+        { "fra": "2026-06-10", "til": "2026-09-20" }
+      ],
+      "kontakt": { "telefon": "+47 61 23 89 10", "epost": "gjendesheim@tiu.example" },
+      "lokallag": "TiU Oppland",
+      "anmeldelser": [
+        { "brukerId": "u-102", "stjerner": 5, "tekst": "Fantastisk middag etter Besseggen!", "dato": "2025-08-03" },
+        { "brukerId": "u-377", "stjerner": 4, "tekst": "Travelt, men hyggelig betjening.", "dato": "2025-07-19" }
+      ]
+    },
+    {
+      "id": "hytte-fjellbu",
+      "navn": "Fjellbu",
+      "betjening": "ubetjent",
+      "beskrivelse": "Liten proviantfri hytte ved vannet. Ta med egen mat.",
+      "lokasjon": {
+        "koordinater": { "lat": 60.1621, "lon": 7.4412 },
+        "hoydeMoh": 1240,
+        "kommune": "Eidfjord",
+        "fylke": "Vestland"
+      },
+      "kapasitet": { "senger": 12, "rom": 3 },
+      "priser": {
+        "valuta": "NOK",
+        "overnatting": [{ "kategori": "Seng", "medlem": 250, "ikkeMedlem": 400 }]
+      },
+      "fasiliteter": ["vedovn", "hundevennlig"],
+      "apningsperioder": [{ "fra": "2026-01-01", "til": "2026-12-31" }],
+      "kontakt": {},
+      "lokallag": "TiU Bergen",
+      "anmeldelser": []
+    }
+  ]
+}

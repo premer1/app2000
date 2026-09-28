@@ -29,6 +29,8 @@ app2000/
 │       ├── index.html           # HTML for prototype 2
 │       ├── styles.css           # Stiler for prototype 2
 │       └── assets/              # Bilder og andre lokale ressurser
+├── eksempler/
+│   └── hytter/                  # JSON-hyttedata og visning i TypeScript
 └── README.md                    # Prosjektinformasjon
 ```
 
