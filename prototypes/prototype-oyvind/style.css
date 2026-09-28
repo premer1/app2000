@@ -1,0 +1,92 @@
+/* GENERELT */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #2a5d34;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 1rem;
+}
+
+/* KORT */
+.card {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* KNAPPER */
+button {
+    padding: 0.7rem 1rem;
+    margin: 0.3rem;
+    border: none;
+    border-radius: 5px;
+    background: #ddd;
+    cursor: pointer;
+}
+
+button.primary {
+    background: #2a5d34;
+    color: white;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* INPUT */
+input, select, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2a5d34;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVITET */
+@media (min-width: 700px) {
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+}
