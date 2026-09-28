@@ -1,0 +1,13 @@
+{
+  "name": "hytter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p .",
+    "test": "node --test hytte.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
