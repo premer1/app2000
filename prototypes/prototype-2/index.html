@@ -3,15 +3,157 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Prototype 2 – Utopia Turistforening</title>
+    <meta
+      name="description"
+      content="Standard grid-layout for Utopia Turistforening."
+    />
+    <title>Turplanlegger – Utopia Turistforening</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <p class="status">Arbeidsområde for gruppen</p>
-      <h1>Prototype 2</h1>
-      <p>Denne siden er klar til å bygges videre på med HTML og CSS.</p>
-      <a href="../../index.html">Se prototype 1</a>
-    </main>
+    <div class="page-layout">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Utopia Turistforening – forsiden">
+          <span class="brand-mark" aria-hidden="true">UT</span>
+          <span>Utopia<br /><strong>Turistforening</strong></span>
+        </a>
+
+        <div class="header-actions">
+          <a href="#varsler">Varsler</a>
+          <a class="profile-link" href="#profil">
+            <span class="avatar" aria-hidden="true">BJ</span>
+            <span>Bjørn</span>
+          </a>
+        </div>
+      </header>
+
+      <aside class="sidebar" aria-label="Hovednavigasjon">
+        <p class="nav-label">Meny</p>
+        <nav>
+          <a class="nav-link active" href="#top"><span aria-hidden="true">⌂</span> Oversikt</a>
+          <a class="nav-link" href="#finn-tur"><span aria-hidden="true">⌕</span> Finn tur</a>
+          <a class="nav-link" href="#mine-turer"><span aria-hidden="true">✓</span> Mine turer</a>
+          <a class="nav-link" href="#fellesskap"><span aria-hidden="true">○</span> Fellesskap</a>
+        </nav>
+
+        <div class="sidebar-note">
+          <p class="eyebrow">Ukens tips</p>
+          <p>Ta med en venn på tur denne helgen.</p>
+          <a href="#fellesskap">Finn turvenner →</a>
+        </div>
+      </aside>
+
+      <main id="top" class="main-content">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">Torsdag 17. september</p>
+            <h1>Hei, Bjørn</h1>
+            <p class="intro">Her finner du turer og aktiviteter som passer for deg.</p>
+          </div>
+          <a class="button" href="#finn-tur">Finn en tur</a>
+        </div>
+
+        <section class="search-panel" id="finn-tur" aria-labelledby="search-title">
+          <div>
+            <p class="eyebrow">Planlegg neste eventyr</p>
+            <h2 id="search-title">Hvor vil du dra?</h2>
+          </div>
+          <form class="trip-search" action="#turforslag">
+            <label>
+              Område eller sted
+              <input type="search" name="sted" placeholder="Søk i Utopia" />
+            </label>
+            <label>
+              Turtype
+              <select name="turtype">
+                <option>Alle turtyper</option>
+                <option>Fottur</option>
+                <option>Sykkeltur</option>
+                <option>Skitur</option>
+              </select>
+            </label>
+            <button class="button" type="submit">Søk</button>
+          </form>
+        </section>
+
+        <section id="turforslag" aria-labelledby="trips-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Populært akkurat nå</p>
+              <h2 id="trips-title">Turforslag i nærheten</h2>
+            </div>
+            <a class="text-link" href="#finn-tur">Se alle turer →</a>
+          </div>
+
+          <div class="trip-grid">
+            <article class="trip-card">
+              <div class="card-image forest-image" role="img" aria-label="Illustrasjon av skog og fjell">
+                <span class="tag">Fottur</span>
+              </div>
+              <div class="card-content">
+                <p class="meta">Nord-Utopia · 3,5 timer</p>
+                <h3>Rundtur ved Sølvvannet</h3>
+                <p>En rolig tur langs vannet med fine rasteplasser underveis.</p>
+                <a class="text-link" href="#turdetaljer">Se turdetaljer →</a>
+              </div>
+            </article>
+            <article class="trip-card">
+              <div class="card-image mountain-image" role="img" aria-label="Illustrasjon av fjelltopp">
+                <span class="tag">Topptur</span>
+              </div>
+              <div class="card-content">
+                <p class="meta">Vest-Utopia · 5 timer</p>
+                <h3>Utsikten fra Drømmetoppen</h3>
+                <p>En luftig tur med panoramautsikt over hele Utopiadalen.</p>
+                <a class="text-link" href="#turdetaljer">Se turdetaljer →</a>
+              </div>
+            </article>
+            <article class="trip-card">
+              <div class="card-image bike-image" role="img" aria-label="Illustrasjon av sykkelsti">
+                <span class="tag">Sykkeltur</span>
+              </div>
+              <div class="card-content">
+                <p class="meta">Sør-Utopia · 2 timer</p>
+                <h3>Gjennom Eventyrskogen</h3>
+                <p>Familievennlig sykkeltur på brede stier og rolige skogsveier.</p>
+                <a class="text-link" href="#turdetaljer">Se turdetaljer →</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="community-panel" id="fellesskap" aria-labelledby="community-title">
+          <div>
+            <p class="eyebrow">Sammen på tur</p>
+            <h2 id="community-title">Finn noen å dele turen med</h2>
+            <p>Bli med i en lokal gruppe eller finn andre med samme turmål.</p>
+          </div>
+          <a class="button button-light" href="#chat">Utforsk fellesskapet</a>
+        </section>
+      </main>
+
+      <aside class="right-column" aria-label="Din aktivitet">
+        <section class="activity-panel" id="mine-turer" aria-labelledby="activity-title">
+          <p class="eyebrow">Din aktivitet</p>
+          <h2 id="activity-title">Denne uken</h2>
+          <div class="progress-row"><span>3 av 5 turer</span><strong>60%</strong></div>
+          <div class="progress-bar"><span></span></div>
+          <p class="muted">Du er godt i gang. Én tur til, så er du halvveis til målet!</p>
+        </section>
+
+        <section class="next-trip" id="turdetaljer" aria-labelledby="next-trip-title">
+          <p class="eyebrow">Neste tur</p>
+          <h2 id="next-trip-title">Sølvvannet</h2>
+          <p class="muted">Lørdag 19. september<br />Kl. 10:00 · Lett</p>
+          <a class="text-link" href="#chat">Se avtale →</a>
+        </section>
+      </aside>
+
+      <footer>
+        <span>Utopia Turistforening · APP2000</span>
+        <a href="../../index.html">Til prototype 1</a>
+        <a href="#top">Til toppen ↑</a>
+      </footer>
+    </div>
   </body>
 </html>

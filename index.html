@@ -9,6 +9,7 @@
     />
     <title>Utopia Turistforening</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -209,11 +210,62 @@
           <article class="price-card"><h3>Senior</h3><p class="price">420 kr <small>/ år</small></p><p>For deg som er 67 år eller eldre.</p><a class="button button-outline" href="#innmelding">Velg senior</a></article>
         </div>
         <form class="signup-demo" id="innmelding" action="#medlem">
-          <label>Navn<input type="text" placeholder="Fornavn og etternavn" /></label>
-          <label>E-post<input type="email" placeholder="navn@eksempel.no" /></label>
-          <label>Medlemskap<select><option>Velg type</option><option>Barn</option><option>Voksen</option><option>Familie</option><option>Senior</option></select></label>
+          <label for="name">
+            Navn
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Fornavn og etternavn"
+              autocomplete="name"
+              minlength="2"
+              maxlength="70"
+              required
+            />
+          </label>
+
+          <label for="email">
+            E-post
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="navn@eksempel.no"
+              autocomplete="email"
+              required
+            />
+          </label>
+
+          <label for="email-confirm">
+            Bekreft e-post
+            <input
+              id="email-confirm"
+              name="email-confirm"
+              type="email"
+              placeholder="Skriv e-posten på nytt"
+              autocomplete="email"
+              required
+            />
+          </label>
+
+          <label for="membership">
+            Medlemskap
+            <select id="membership" name="membership" required>
+              <option value="">Velg type</option>
+              <option value="barn">Barn</option>
+              <option value="voksen">Voksen</option>
+              <option value="familie">Familie</option>
+              <option value="senior">Senior</option>
+            </select>
+          </label>
+
           <button class="button" type="submit">Start innmelding</button>
-          <p class="demo-note">Dette er et demo-skjema og lagrer ingen opplysninger.</p>
+
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+
+          <p class="demo-note">
+            Dette er et demo-skjema og lagrer ingen opplysninger.
+          </p>
         </form>
       </section>
     </main>
